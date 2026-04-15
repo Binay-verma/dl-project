@@ -1,0 +1,61 @@
+{
+  "timestamp": "20260317_145035",
+  "best_model": "XGBoost",
+  "auc": 0.9960423488075776,
+  "threshold_method": "F2 (recall-weighted, beta=2)",
+  "optimal_threshold": 0.5856565833091736,
+  "precision": 0.8220278471974295,
+  "recall": 0.9697799305043698,
+  "f1": 0.889812086372639,
+  "f2": 0.9361278256407236,
+  "features": [
+    "speed",
+    "vehicle_count",
+    "occupancy",
+    "density",
+    "flow",
+    "edge_length",
+    "num_lanes",
+    "speed_variance",
+    "avg_acceleration",
+    "sudden_braking_count",
+    "queue_length",
+    "accident_frequency",
+    "emergency_vehicles",
+    "reroute_activity",
+    "is_rush_hour",
+    "time_of_day",
+    "delta_speed_1",
+    "delta_speed_3",
+    "rolling_speed_std_5",
+    "speed_drop_flag",
+    "delta_density",
+    "rolling_density_mean_5",
+    "density_acceleration",
+    "hard_brake_ratio",
+    "ttc_estimate",
+    "queue_pressure",
+    "instability_score"
+  ],
+  "n_features": 27,
+  "n_base_features": 16,
+  "n_temporal_features": 11,
+  "n_train": 437903,
+  "n_val": 93837,
+  "n_test": 93837,
+  "positive_rate": 0.10121216093302662,
+  "all_models": {
+    "CatBoost": {
+      "auc": 0.981666890102135
+    },
+    "XGBoost": {
+      "auc": 0.9960423488075776
+    },
+    "RandomForest": {
+      "auc": 0.9331507823108723
+    },
+    "GradBoost": {
+      "auc": 0.9665103240545065
+    }
+  }
+}

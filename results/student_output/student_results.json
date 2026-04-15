@@ -1,0 +1,64 @@
+{
+  "timestamp": "20260312_224735",
+  "student_type": "RandomForest",
+  "deployment_threshold": 0.5657693130177117,
+  "threshold_method": "F2 (recall-weighted, beta=2)",
+  "distillation": {
+    "alpha": 0.5,
+    "flip_rate_pos": 0.0,
+    "flip_rate_neg": 0.0
+  },
+  "student_metrics": {
+    "auc": 0.9870921040702069,
+    "precision": 0.7217362326085145,
+    "recall": 0.9121827945667053,
+    "f1": 0.8058604651162791,
+    "f2": 0.8664559620503665
+  },
+  "teacher_metrics": {
+    "auc": 0.9960423488075776,
+    "precision": 0.8058869633371071,
+    "recall": 0.9744129725176371,
+    "f1": 0.8821734985700668
+  },
+  "retention": {
+    "precision": 0.8955799826068264,
+    "recall": 0.9361357250918522
+  },
+  "confusion_matrix": {
+    "tn": 81000,
+    "fp": 3340,
+    "fn": 834,
+    "tp": 8663
+  },
+  "features": [
+    "speed",
+    "vehicle_count",
+    "occupancy",
+    "density",
+    "flow",
+    "edge_length",
+    "num_lanes",
+    "speed_variance",
+    "avg_acceleration",
+    "sudden_braking_count",
+    "queue_length",
+    "accident_frequency",
+    "emergency_vehicles",
+    "reroute_activity",
+    "is_rush_hour",
+    "time_of_day",
+    "delta_speed_1",
+    "delta_speed_3",
+    "rolling_speed_std_5",
+    "speed_drop_flag",
+    "delta_density",
+    "rolling_density_mean_5",
+    "density_acceleration",
+    "hard_brake_ratio",
+    "ttc_estimate",
+    "queue_pressure",
+    "instability_score"
+  ],
+  "n_features": 27
+}
