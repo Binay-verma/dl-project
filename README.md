@@ -24,3 +24,9 @@ python src/phase5_demo.py        # Demo
 ## Dataset
 - SUMO simulation: generated locally (see /data for sample)
 - pNEUMA: https://open-traffic.epfl.ch/index.php/downloads/
+## Run Order
+1. python src/phase3_corrected.py # Train teacher
+2. python src/phase4_corrected_final.py # Knowledge distillation
+3. python src/phase12_gnn.py # GNN
+4. python src/phase13_tgnn_final.py # T-GNN (main)
+5. python src/phase5_demo.py # Demo
